@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "hotbarprofiles",
+  "version": "${version}",
+  "name": "Hotbar Profiles",
+  "description": "Save and switch between multiple hotbar layouts (e.g. Building, Mining, Combat).",
+  "authors": ["You"],
+  "license": "MIT",
+  "icon": "assets/hotbarprofiles/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.hotbarprofiles.HotbarProfilesClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
