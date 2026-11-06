@@ -10,7 +10,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.inventory.ClickType;
+import net.minecraft.world.inventory.ContainerInput;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
@@ -144,7 +144,7 @@ public final class ProfileManager {
             if (source < 0) { missing++; continue; }
 
             int menuSlot = source < 9 ? 36 + source : source;      // inventory menu slot ids
-            gm.handleInventoryMouseClick(player.inventoryMenu.containerId, menuSlot, s, ClickType.SWAP, player);
+            gm.handleContainerInput(player.inventoryMenu.containerId, menuSlot, s, ContainerInput.SWAP, player);
             ok[s] = true;
         }
 
@@ -153,4 +153,4 @@ public final class ProfileManager {
         String msg = "Hotbar profile: " + profile.name + (missing > 0 ? " (" + missing + " item(s) missing)" : "");
         player.sendOverlayMessage(Component.literal(msg));
     }
-}
+            }
