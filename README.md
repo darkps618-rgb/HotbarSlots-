@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/logo.png" width="160" alt="Hotbar Profiles logo"></p>
+<p align="center"><img src="logo.png" width="160" alt="Hotbar Profiles logo"></p>
 
 # Hotbar Profiles
 
@@ -29,14 +29,15 @@ A client-side Fabric mod for **Minecraft 26.3** that lets you save and switch be
 
 ## Build
 Needs **JDK 25**.
+
 ```bash
-gradle wrapper --gradle-version 9.8.2   # once, if you have Gradle installed
+gradle wrapper --gradle-version 9.8.2
 ./gradlew build
 ```
+
 The jar is created in `build/libs/` (use the one without `-sources`).
 
-You can also let GitHub build it: every push runs the workflow in `.github/workflows/build.yml`
-and uploads the jar as a downloadable artifact (Actions tab).
+You can also let GitHub build it: every push runs the workflow in `.github/workflows/build.yml` and uploads the jar as a downloadable artifact (Actions tab).
 
 ## License
 MIT
